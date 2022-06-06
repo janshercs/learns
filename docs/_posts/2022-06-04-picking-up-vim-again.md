@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Trying vim again"
-categories: Set up!
+tags: "set-up"
 ---
 # Introduction
 I've tried vim before in my first week, of my first job: it was a bad decision. There were already so much to learn as a first time programmer; you don't want to add to that cognitive load. Now that things have changed in my life; I'm no longer trying to learn multiple things at once, I can once again try to pick up vim!
