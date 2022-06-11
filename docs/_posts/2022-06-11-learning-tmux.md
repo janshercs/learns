@@ -7,6 +7,7 @@ Learning how to set up sessions in tmux.
 ### Session stuff
 creating new session: `tmux new -s session name`
 exiting session while leaving it running: `ctrl-b d`
+* this allows you to go back to your usual terminal!
 previewing open sessions: `ctrl-b w`
 
 ### Window stuff
