@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "tmux stuff"
-tags: set up
+title: "tmux commands commonly used"
+tags: setup
 ---
 
 Learning how to set up sessions in tmux.
@@ -9,6 +9,7 @@ Learning how to set up sessions in tmux.
 ### Session stuff
 
 creating new session: `tmux new -s session name`
+
 exiting session while leaving it running: `ctrl-b d`
 
 - this allows you to go back to your usual terminal!
@@ -17,11 +18,15 @@ exiting session while leaving it running: `ctrl-b d`
 ### Window stuff
 
 creating new window within session: `ctrl-b c`
+
 going to next window within session: `ctrl-b n`
 
 ### Pane stuff
 
 creating pane to the right (vsplit): `ctrl-b %`
+
 creating pane to the bottom (hsplit): `ctrl-b ;`
+
 switching panes: `ctrl-b + arrow keys`
+
 killing panes: `ctrl-b + x`
