@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Site Reliabilty Engineering"
-tags: SRE Devops GoldenMetrics
+tags: SRE Devops GoldenSignals
 ---
 
 ## Introduction
@@ -78,3 +78,49 @@ Definition of `Toil`:
 The chapter in the book mainly covers the reasons to eliminate toil as much as we can from work as it can cause low morale, confusion, slow progress and sets precedents for developers to load the SRE team with more toil.
 
 Personally, I believe in automating as much work as possible, as long as they do not require human judgement; the book also mentions that if a system requires too much human judgement, it could also indicate that the system design is flawed and is not scalable long term.
+
+## Monitoring
+
+### White Box v.s. Black Box monitoring
+
+- White box monitoring provides information from within the system: will be useful in supporting diagnoses
+- Black box monitoring takes on the POV of an end user
+- Use both in conjunction to achieve a good view of the system's performance as well as to provide a good view of the internals
+
+### Golden Signals
+
+- Latency - Time taken to service a request; should also consider including error latency (how long it takes to return an error) as it impacts user experience
+- Traffic - Demand of the service: can be measured as requests per second in web applications, can be i/o operations for other services such as storage
+- Errors - Rate of service response failures; extra metrics could be required if we are targeting partial failures as well
+- Saturation - How much resource is the service consuming and is it reaching its maximum?
+
+For maximum efficacy, there is also a need to choose an appropriate time resolution for these measurements; i.e. no need for every minute sampling if a system is targeting 99.9% availability (9 hours down time).
+
+There is a temptation to create dashboards and metrics for every aspect of the system, but coupled with complex dependent monitors + diagnostic code/metrics, monitoring can quickly grow out of hand, generating more noise than signals.
+
+The mantra should be: _As Simple as possible, no simpler_
+
+Some guidelines for keeping monitoring simple:
+
+- Data collected that are seldom used should be up for removal
+- Signals that are collected that are not used in any dashboards should be up for removal
+
+### Reasonable Alerts
+
+To avoid alert fatigue, the following rules should be asked when installing an alert:
+
+- Does this alert detect an otherwise undetected condition and is urgent, actionable and is visible to customers?
+- Can/Will I ignore this alert because it is benign? How do I avoid this scenario or remove this false positive?
+- Are other people getting paged for this issue? Is that necessary?
+- Can the response taken be automated?
+
+To summarise the above, in order for an event to qualify as alertable it has to be:
+
+- Actionable
+- Visible to customers
+- True positive
+- A novel problem that requires intelligence for response
+
+#### Long term plans
+
+Alerts that require attention/action from engineers take up time and energy from engineers as they are busy triaging the alerts; backing off the alerts could allow more time and space for them to fix the root cause of the problem.
