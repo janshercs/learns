@@ -124,3 +124,22 @@ To summarise the above, in order for an event to qualify as alertable it has to 
 #### Long term plans
 
 Alerts that require attention/action from engineers take up time and energy from engineers as they are busy triaging the alerts; backing off the alerts could allow more time and space for them to fix the root cause of the problem.
+
+## Automation: Evolution of Automation at Google
+
+Mainly a chapter describing how automation is done in Google, some nuggets from this chapter are:
+
+- Hierachy of Automation
+
+  - No Automation
+  - Externally maintained system specific automation: script written by 1 person that the person uses every time
+  - Externally maintained generic automation: script that is used by everyone on the SRE team
+  - Internally maintained system specific automation: ships with failover script, that still has to be manually triggered
+  - System not needing automation: system able to self correct and failover (think _kubernetes_)
+
+- Aligning incentives of automation & service teams
+  - Needed for designing a system easy for automation
+  - Maintain currency of automation scripts
+  - Allocate time for technical debts
+
+An interesting story in this chapter was that of Borg, and how it was born of necessity due to scale and it tells us that how certain automations are necessary for the scale of the projects.
