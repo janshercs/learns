@@ -60,3 +60,51 @@ are places where bad decisions lurk.
 ### Revisitng Decisions
 
 Once decisions are made, and new data comes in, decisions should be revisited to decide if prior assumptions still hold and new decisions should be taken if there are significant differences.
+
+## How to work with others
+
+The chapter begins with a great point:
+
+> ... it makes better sense to focus on the one variable over which you definitely have control: you.
+
+We can certainly control our own behaviour and so we should start there for it is a sure win if we are able to control ourselves.
+
+### The Genius Myth
+
+For way too long we have been trying/idolising the geniuses. The myth is that a **Genius** will come up with an idea, work on it alone and unveil their works to the world while the world marvels at their creation.
+
+The truth is that nobody goes at it alone anymore and people NEED to work in a team, but this has not stopped the myth of the Genius from perpetrating. While being a genius is nice, chances are, we are not geniuses, statistically speaking (or at least I'm sure I'm not one).
+
+Not being a genius means I'll need all the help and guidance that I can get, and nobody likes to help a jerk!
+
+### It's all about the team
+
+3 most important aspects of working well in a team:
+
+1. Humility
+2. Respect
+3. Trust
+
+#### Patterns and Anti-patterns on how to behave in the team
+
+These behaviours taken from the book are closely related to the principles mentioned above.
+
+**Good Behaviour**
+
+- Be open to influence
+- Be ok to admit knowledge gaps: shows that you are open to criticism and truthful; no one can know everything.
+
+**Anti Behaviour**
+
+- Hiding and working in silo
+  - Bus factor: what happens if you are unable to continue to work on the project due to any incident in life?
+  - No feedback loop; what you are building might not be the desired product afterall
+- Egotistical behaviours:
+  - Having to say something all the time: Shows that you have there is an ego you'd like to salve
+  - Needing to have a last say in all matters
+
+## Creating a safe space to learn
+
+- Psychology
+- documentation
+- go/link tools
