@@ -103,8 +103,33 @@ These behaviours taken from the book are closely related to the principles menti
   - Having to say something all the time: Shows that you have there is an ego you'd like to salve
   - Needing to have a last say in all matters
 
-## Creating a safe space to learn
+## Knowledge Sharing
 
-- Psychology
-- documentation
-- go/link tools
+As the organisation/team grows, so do the amount of knowledge. The ability to share knowledge within the organisation can make or break it, as no external parties will understand the problems as well as those internally.
+
+### Challenges faced
+
+- Psychology safety
+- Information islands
+- Single point of failure
+- All or nothing knowledge expertise
+- Parroting - mimicry without understanding
+- Haunted graveyards/code - Nobody dares to touch parts of the code in fear of breaking things.
+
+### Overcoming Challenges
+
+#### Culture
+
+- Mentorship
+- Banning unhelpful behaviour
+  - The team can be reduced to its most toxic members
+  - A few of these members can make the environment unwelcoming and new members stop trying to get help from within the team.
+- Canonical sources of information: standard information that applies to everybody in the organisation.
+
+#### Tools of Distributing Knowledge
+
+- Newsletters
+- Lessons/Tech talks
+- Documentation
+- Go/link tools
+- Code review certifications
