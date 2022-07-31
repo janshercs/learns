@@ -8,6 +8,8 @@ tags: engineering principles lessons
 
 A little humor there, because they define Software Engineering as programming over time. This book is a compilation of wisdom of x-googlers (xooglers) & googlers over time and they pertain to mostly to policies, tools and best practices in developing code that is meant to live for a long time (possibly infinite).
 
+You are able to view the book online [here](https://abseil.io/resources/swe-book/html/toc.html).
+
 ## It all depends on the time and scale
 
 The book makes the case that best practices for a block of code or a software project depends on the expected time that the project is to live and the scale which it is to be implemented at; as a 2 day hackathon project has very different requirements and considerations from writing the file system binary for a linux kernel.
@@ -57,7 +59,7 @@ Reasons such as
 
 are places where bad decisions lurk.
 
-### Revisitng Decisions
+### Revisiting Decisions
 
 Once decisions are made, and new data comes in, decisions should be revisited to decide if prior assumptions still hold and new decisions should be taken if there are significant differences.
 
@@ -129,7 +131,109 @@ As the organisation/team grows, so do the amount of knowledge. The ability to sh
 #### Tools of Distributing Knowledge
 
 - Newsletters
-- Lessons/Tech talks
+  - Has a narrow scope, easily distributed via emails or messages
+- Tech talks
 - Documentation
+  - Standard go-to for code
 - Go/link tools
-- Code review certifications
+  - Articles or guides with a simple link in the path so it is the first go to for everyone who seeks to find out more about a certain topic
+  - Simple link example would be: go.link/python is the path to the google Python style guide
+- Code review certifications (called Readability certifications)
+- Online labs
+- Email threads
+- Classes
+  - Due to the high effort required to start classes; the topic should be complex enough and it's reward should be substantial enough to warrant the creation of a class
+
+#### Attributes of different kinds of knowledge medium to consider
+
+- Effort to create
+  - Is it easy for people to share their knowledge?
+  - How much work has to go into it before it can be launched?
+- Effort to maintain
+  - Does the information get updated over time? Or does it get frozen and becomes irrelevant?
+  - Does maintaining it take a lot of time?
+- Accessibility
+  - Will the next person with the same question be able to find this easily?
+- Engagement
+  - How effective is the knowledge transfer going to be?
+- Relevance
+  - Is the answer specific enough for the question in mind? Or is it too general?
+
+## Style Guide
+
+### Reasons for style guide
+
+- Encourate good behaviour, discourage bad behaviour
+- Reduce decision fatigue (e.g. no need to think about formatting)
+- Consistency across the organisation
+
+### What warrants inclusion into a style guide?
+
+- They should pull their own weight
+  - Meaning it should help improve code quality to a larger extent than the efforts taken to adhere by it.
+- Different practices from external community
+  - If organisation specific reasons favours a certain rule that is not standard with the external community, it should be included in the guide.
+- Optimising Readability
+  - Google's code is focused on readability as code is read more than it is written; if a non-obvious rule helps with readability, it should be added to the guide.
+
+### Extra Considerations
+
+- Ubiquitous rules; if everyone using the language knows to avoid it, there's no need to re-state it in the guide
+- Consistency with the community: if possible, we should aim to be consistent with the entire community as a whole; easier for experienced developers, easier for open-sourcing a project
+
+### Automate this stuff
+
+- Even better than guides is automation; error checkers, code formatters are exteremely valuable in this aspect as they allow the rules to scale with minimal human effort.
+- When rules can be automatically applied, code becomes more consistent and less time is spent debating over non-consequential issues.
+- This also allows for many rules to be left out of the style guide as they do not require the human to be aware of it, saving time and effort!
+- In a word, automation makes this **Scalable**.
+
+## Code Review
+
+Practice of code review is common in tech industry, different in different companies, I will not be listing the code review work flow down as it is Google specific. Instead I'll cover some of the best practices while reviewing code.
+
+### Aims of code review
+
+- Ensuring correctness (bugs caught earlier reduces cost; there's a whole argument about shifting stuff left in the development process)
+- Ensures readability and consistency
+- Promotes knowledge transfer
+  - As senior engineers critique on code, it's the best time for juniors to learn (and vice versa)
+
+### Best Practices
+
+- Be polite and professional
+  - Goes without saying
+- Not time for debating design decisions
+  - Discussions should have taken place before
+- Small changes are preferred
+  - Makes things easier for reviewers to read
+- Make all comments at once
+  - So authors can take in and make edits at the same time instead of having to revisit the same code multiple times
+- Split up review responsibilities
+  - Reviewers are better able to spot issues if the scope of the review is smaller: i.e. focused on readability, or consistency or business logic
+- Automate where possible (linters/formatters/analysis)
+
+### Taking it in the right spirit
+
+Remember the matra:
+
+> You are not your code.
+
+## Testing
+
+### Types of tests
+
+- Small
+  - Limited to single process
+- Medium
+  - Single machine, multiple processes
+- Large
+  - Different machines, network calls, isolated network
+
+### Attributes of tests
+
+Different types of test differs in
+
+- Scope
+- Fidelity
+- Speed
