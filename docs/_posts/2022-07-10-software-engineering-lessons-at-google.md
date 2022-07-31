@@ -237,3 +237,13 @@ Different types of test differs in
 - Scope
 - Fidelity
 - Speed
+
+### Test Doubles, Mocks, Fakes, Stubs
+
+This topic deserves an entire post and discussion all by itself, and indeed it does have tons of articles (see Martin Fowler's blog). The following is more of my opinion than anything else and I believe each team should decide on how they wish to approach this issue.
+
+The main use of mocks is to remove 3rd party dependencies in a test; examples include io and network calls. While mocking adding stubs to them allows the test to verify that a certain function is called with the required arguments, it does however, test the interaction itself and makes the tests brittle.
+
+Coupled with mocking libraries that make generating mocks trivial, I feel like there is an over use of mocks, leading to brittle tests, which in turn leads to difficulty in refactoring. That being said, there are also benefits that come with using mocks such as being able to instantiate a component in 1 line, where the real thing could require 10+ lines. Using mocks also isolates the system under test (or the component that we are writing tests for).
+
+My **personal** preference is to use the real components where possible and to only add in mocks where there are calls to outside the process, as it preserves the real behaviour where possible and at the same time, tests the behaviour, instead of implementation/interaction of a system.
