@@ -40,11 +40,69 @@ Preprocessing seam changes the item under test during compile phase: i.e. compil
 
 For newer languages such as JS, Python, Go with good testing frameworks around (or built into the language), **Object Seam** is the most useful. As you can imagine, it involves isolating the object in question and testing its behaviours.
 
-# Making changes to the code
+## Getting stuff into tests
+
+### Breaking dependencies
+
+Some times components are directly dependent on other components that we do not want to use during testing (HTTP client, Databases), and this is a blocker in getting the class into tests. In these cases we can use the idea of dependency inversion to get ourselves out of this bind! Consider the following example:
+
+```go
+type UserSystem struct {
+	db sql.DB
+}
+```
+
+Now the user has to pass an actual db into the struct during tests! In order to break the dependency, we can create and use small interfaces like this:
+
+```go
+type UserSystem struct {
+	db driver.Tx
+}
+```
+
+so now we can pass in anything that implements the [driver.Tx](https://pkg.go.dev/database/sql/driver#Tx) interface as a db and it is now possible to pass in a test double!
+
+Some times they are something like a custom class: you may use refactoring tools such as `extract interface` (sounds like something fancy from JetBrains for Java! There's nothing available for Go for now)
+
+### Embedded Constructors
+
+Some times the dependencies can be hidden within the constructors for certain classes! In these cases we can consider to `parameterize the constructor`.
+
+```go
+func NewUserSystem() *UserSystem {
+		return &UserSystem {db: InitDB()}
+}
+```
+
+In this case, the initiation of the DB is hidden within the constructor code, leaving us no seam to swap it out for a fake!
+
+Here we can create a seam by moving the db into the constructor like so:
+
+```go
+func NewUserSystem(db driver.Tx) *UserSystem {
+		return &UserSystem {db: db}
+}
+```
+
+In doing so, we have changed the signature of the constructor function, which goes against making as little change as we can during refactorings! We can fix it with this nifty trick that is similar to the `wrap method` below!
+
+```go
+func NewUserSystem() *UserSystem {
+		return NewUserSystemFromDB(InitDB())
+}
+
+func NewUserSystemFromDB(db driver.Tx) *UserSystem {
+		return &UserSystem {db: db}
+}
+```
+
+By changing the names of the function and wrapping the new constructor function with the old function, it preserves the signatures, but at the same time creates a new constructor to use for tests!
+
+## Making changes to the code
 
 Assuming we were able to get the code under test for the behaviours we want to keep constant (or just gave up on that and just want to test the newly written code), here are a few strategies to reduce the impact of adding new code (read: make it less messy).
 
-## Sprout
+### Sprout
 
 Basically identifying where you need to add some code, making a new method for the code you need to add, and **sprout** it as a line in the old code! It's a good strategy because it reduces the intertwining of old and new code and allows your new method to be tested more easily.
 An example:
@@ -71,7 +129,7 @@ function Log(file, employee string){
 }
 ```
 
-## Wrap
+### Wrap
 
 This technique **wraps** the old code, changes the name of the old code and calls both the new code and old code using the old function name!
 
