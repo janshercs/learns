@@ -33,6 +33,8 @@ I will write a summary of the book in a separate post.
 1. I do not write with the aim to persuade.
 2. My sentences are long and complicated.
 3. I'm not sure when or which transition words to use.
+4. I use unnecessary capitalizations.
+5. Faulty sentence structures: trying to change grammatical patterns midway through a sentence.
 
 ### Process errors
 
