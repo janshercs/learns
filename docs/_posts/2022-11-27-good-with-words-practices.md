@@ -45,6 +45,14 @@ I will write a summary of the book in a separate post.
 
 > To write good sentences, you need to read good sentences. So each week we will make sure to treat our brains to some high-quality material. You'll have a lot of choices to pick from. The only requirement is the one I mentioned in the Good Sentences video: pick your favorite sentence and write it out.
 
-### Week 48, 2022: [State Facts for the New Age](https://therumpus.net/2016/09/02/rumpus-original-fiction-state-facts-for-the-new-age/)
+### Week 48, 2022
+
+#### [State Facts for the New Age](https://therumpus.net/2016/09/02/rumpus-original-fiction-state-facts-for-the-new-age/)
 
 > I shoved the monkey further back in the drawer, as if it will dry up and die.
+
+#### [The coddling of the American Mind](https://www.theatlantic.com/magazine/archive/2015/09/the-coddling-of-the-american-mind/399356/)
+
+> Some recent campus actions border on the surreal.
+
+> For millennia, philosophers have understood that we don't see life as it is; we see a version distorted by our hopes, fears, and other attachments.
