@@ -57,6 +57,18 @@ I will write a summary of the book in a separate post.
 
 > For millennia, philosophers have understood that we don't see life as it is; we see a version distorted by our hopes, fears, and other attachments.
 
+#### [Boys are not defective](https://www.theatlantic.com/education/archive/2017/09/boys-are-not-defective/540204/)
+
+> Disengaged boys grow up to become disillusioned men, Ridge says, left out of the progress they see around them.
+
+> I think they see education as a way out of the confinement.
+
+> Not just teacher quality but students' sense of safety, their study habits and the subtleties of boy and girl peer culture all converge to create a healthy ---or toxic--- brew.
+>
+> (note: slightly lengthy sentence but it incorporates many ideas in a way that is not hard to read! 👍)
+
+> And neither can thrive in a world where the other is diminished. 🌟
+
 ## Exercise 2.1: Headlining
 
 Find a headline in the news that involves 2 parties and try to imagine what headlines would the local news put out on the same event.
