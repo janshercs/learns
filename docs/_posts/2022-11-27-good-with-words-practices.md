@@ -56,3 +56,35 @@ I will write a summary of the book in a separate post.
 > Some recent campus actions border on the surreal.
 
 > For millennia, philosophers have understood that we don't see life as it is; we see a version distorted by our hopes, fears, and other attachments.
+
+## Exercise 2.1: Headlining
+
+Find a headline in the news that involves 2 parties and try to imagine what headlines would the local news put out on the same event.
+
+### Practice 1:
+
+Original headline
+
+> Iran eliminated from World Cup after narrow defeat by the US
+
+Iranian News
+
+> Almost there, but not quite: Iran out of the World Cup after narrow defeat by the US.
+
+US News
+
+> Team USA defeats Iran in World Cup, heads to final 16.
+
+### Practice 2:
+
+Original headline
+
+> Chinese authorities seek out COVID-19 protesters
+
+Chinese News
+
+> Authorities pursue disruptors of peace.
+
+Foreign News
+
+> Chinese authorities prosecutes COVID-19 protesters.
