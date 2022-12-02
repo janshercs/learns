@@ -69,6 +69,18 @@ I will write a summary of the book in a separate post.
 
 > And neither can thrive in a world where the other is diminished. 🌟
 
+#### [What's Better?](https://www.theparisreview.org/blog/2017/09/01/whats-better/)
+
+> Both adults and children may go to pubs, but only children can go to school.
+
+(note: I feel like I do not appreciate the entire poem enough; perhaps I am missing some historical context. The author is Anton Chekhov who is Russian.)
+
+#### [Mr. Burley](https://therumpus.net/2022/11/28/rumpus-original-fiction-mr-burley/)
+
+> And then I'd be lifted, picked up by the torso, my own limbs whipping the dark of my bedroom.
+
+### Week 49, 2022
+
 ## Exercise 2.1: Headlining
 
 Find a headline in the news that involves 2 parties and try to imagine what headlines would the local news put out on the same event.
