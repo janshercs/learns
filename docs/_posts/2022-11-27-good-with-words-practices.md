@@ -79,6 +79,16 @@ I will write a summary of the book in a separate post.
 
 > And then I'd be lifted, picked up by the torso, my own limbs whipping the dark of my bedroom.
 
+#### [Underworld](https://www.gq.com/story/coal-mines-underground-economy)
+
+> Do you think that's part of the allure for you guys, that you escape your problems down here?
+
+> I think you'll find there are no aesthetic choices, nor is there irony, in a coal mine.
+
+> Everyone I talked to in the coal mine had a reason for being there that had nothing to do with coal, even if the reason was beer.
+
+> Everyone spoke of Pap with respect, even kindness, but also with a certain amount of horror.
+
 ### Week 49, 2022
 
 ## Exercise 2.1: Headlining
