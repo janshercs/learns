@@ -89,6 +89,16 @@ I will write a summary of the book in a separate post.
 
 > Everyone spoke of Pap with respect, even kindness, but also with a certain amount of horror.
 
+#### [The Bridal Set](https://therumpus.net/2022/11/14/11-14-rumpus-original-fiction-the-bridal-set/)
+
+> About this, people speculated, changed their stories, agreed and disagreed, but the verdict of the whole saga floated above their chatter like a big gray cloud that no one wanted to see.
+
+> In Bombay every friendship was scintillated by exchanges of information about other people.
+
+> Time began to disappear, replaced by waves of wanting and unwanting.
+
+> When you're at the bottom you come to know all the dark places that you thought were only for other people.
+
 ### Week 49, 2022
 
 ## Exercise 2.1: Headlining
