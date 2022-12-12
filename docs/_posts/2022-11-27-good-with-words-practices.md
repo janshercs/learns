@@ -99,6 +99,12 @@ I will write a summary of the book in a separate post.
 
 > When you're at the bottom you come to know all the dark places that you thought were only for other people.
 
+#### [Enough Landlines](https://therumpus.net/2022/12/09/enough-landlines/)
+
+> Outside, the barking of the dog was still rolling in the air and it matched my heartbeat perfectly.
+
+> All I could think of was a vivid image of my mother's face, her eyes closed against the sunlight, against the life that she'd lived, her face empty of the pain as she lay with her head in a place very similar to this one, this room with its bathtub and its stained glass shower curtain and its tiles that still smelled of bleach.
+
 ### Week 49, 2022
 
 ## Exercise 2.1: Headlining
