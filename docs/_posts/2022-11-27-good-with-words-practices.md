@@ -75,6 +75,8 @@ I will write a summary of the book in a separate post.
 
 (note: I feel like I do not appreciate the entire poem enough; perhaps I am missing some historical context. The author is Anton Chekhov who is Russian.)
 
+### Week 49, 2022
+
 #### [Mr. Burley](https://therumpus.net/2022/11/28/rumpus-original-fiction-mr-burley/)
 
 > And then I'd be lifted, picked up by the torso, my own limbs whipping the dark of my bedroom.
@@ -105,7 +107,15 @@ I will write a summary of the book in a separate post.
 
 > All I could think of was a vivid image of my mother's face, her eyes closed against the sunlight, against the life that she'd lived, her face empty of the pain as she lay with her head in a place very similar to this one, this room with its bathtub and its stained glass shower curtain and its tiles that still smelled of bleach.
 
-### Week 49, 2022
+### Week 50, 2022
+
+#### [On The Farm](https://therumpus.net/2022/12/12/on-the-farm/)
+
+> I am helping him or at least I am someone who is here to help him.
+
+> I look and speak to him, knowing that he will die just as he lives now.
+
+> Off the farm, where I need so many things, I do nothing.
 
 ## Exercise 2.1: Headlining
 
